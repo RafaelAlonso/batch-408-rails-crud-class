@@ -1,0 +1,8 @@
+<h1><%= @restaurant.name %></h1>
+
+<p>Localizado em: <%= @restaurant.address %></p>
+<p>Nota: <%= '⭐️' * @restaurant.rating %></p>
+
+<%= link_to 'Edit this Restaurant', edit_restaurant_path(@restaurant.id) %>
+
+<%= link_to 'Delete this Restaurant', restaurant_path(@restaurant.id), method: :delete %>
